@@ -27,13 +27,13 @@ const Product = sequelize.define('product', {
     img: {type: DataTypes.STRING, allowNull: false},
 })
 
-const Category_product = sequelize.define('category_product', {
+const CategoryProduct = sequelize.define('category_product', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name_category: {type: DataTypes.STRING, unique: true, allowNull: false},
     unit_product: {type: DataTypes.STRING, allowNull: false,}
 })
 
-const Info_product = sequelize.define('info_product', {
+const InfoProduct = sequelize.define('info_product', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     title: {type: DataTypes.STRING, allowNull: false},
     description: {type: DataTypes.STRING, allowNull: false,}
@@ -48,12 +48,12 @@ BasketProduct.belongsTo(Basket)
 Product.hasMany(BasketProduct)
 BasketProduct.belongsTo(Product)
 
-Category_product.hasMany(Product)
-Product.belongsTo(Category_product)
+CategoryProduct.hasMany(Product)
+Product.belongsTo(CategoryProduct)
 
-Product.hasMany(Info_product)
-Info_product.belongsTo(Product)
+Product.hasMany(InfoProduct)
+InfoProduct.belongsTo(Product)
 
 module.exports = {
-    User, Basket, BasketProduct, Product, Category_product, Info_product
+    User, Basket, BasketProduct, Product, CategoryProduct, InfoProduct
 }
