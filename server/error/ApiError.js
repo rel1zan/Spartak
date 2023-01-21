@@ -1,8 +1,8 @@
 class ApiError extends Error{
     constructor(status, message) {
         super();
-        this.status
-        this.message
+        this.status = status
+        this.message = message
     }
 
     static badRequest(message) {
@@ -17,3 +17,5 @@ class ApiError extends Error{
         return new ApiError(403,message)
     }
 }
+
+module.exports = ApiError
