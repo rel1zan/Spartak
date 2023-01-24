@@ -51,7 +51,7 @@ BasketProduct.belongsTo(Product)
 CategoryProduct.hasMany(Product)
 Product.belongsTo(CategoryProduct)
 
-Product.hasMany(InfoProduct)
+Product.hasMany(InfoProduct, {as: 'info'})
 InfoProduct.belongsTo(Product)
 
 module.exports = {
