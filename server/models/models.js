@@ -27,13 +27,13 @@ const Product = sequelize.define('product', {
     img: {type: DataTypes.STRING, allowNull: false},
 })
 
-const CategoryProduct = sequelize.define('category_product', {
+const CategoryProduct = sequelize.define('category', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name_category: {type: DataTypes.STRING, unique: true, allowNull: false},
-    unit_product: {type: DataTypes.STRING, allowNull: false,}
+    unit_product: {type: DataTypes.STRING}
 })
 
-const InfoProduct = sequelize.define('info_product', {
+const InfoProduct = sequelize.define('info', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     title: {type: DataTypes.STRING, allowNull: false},
     description: {type: DataTypes.STRING, allowNull: false,}
