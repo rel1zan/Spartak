@@ -1,19 +1,20 @@
 import React, {useContext} from 'react';
 import {Context} from "../index";
-import {Button, Container, Form, Nav, Navbar, NavLink} from "react-bootstrap";
+import {Button, Container, Nav, Navbar} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 import {SHOP_ROUTE} from "../utils/consts";
 import {observer} from "mobx-react-lite";
 
 const NavBar = observer(() => {
     const {user} = useContext(Context)
     return (
-        <Navbar bg="primary" variant="dark">
-            <Container className="container-lg">
-                <NavLink className="" to={SHOP_ROUTE} style={{color:"white", fontWeight:"bold"}}>SPARTAK</NavLink>
+        <Navbar expand="lg" bg="dark" variant="dark">
+            <Container>
+                <NavLink style={{color:"white",fontWeight:"bold", textDecoration: "none"}} to={SHOP_ROUTE}>SPARTAK</NavLink>
                 {user.isAuth ?
-                    <Nav className="ml-auto justify-content-between" style={{width: '150px'}}>
+                    <Nav className="ml-auto">
                         <Button variant={"outline-light"}>Admin</Button>
-                        <Button variant={"outline-light"}>Sing In</Button>
+                        <Button variant={"outline-light"} className="ml-4">Sign in</Button>
                     </Nav>
                     :
                     <Nav className="ml-auto">
