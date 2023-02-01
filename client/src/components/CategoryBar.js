@@ -5,9 +5,8 @@ import {ListGroup} from "react-bootstrap";
 
 const CategoryBar = observer(() => {
     const {product} = useContext(Context)
-    console.log(product)
     return (
-        <ListGroup>
+        <ListGroup className="mt-3">
             {product._categories.map(category =>
                 <ListGroup.Item
                     style={{cursor: 'pointer'}}
