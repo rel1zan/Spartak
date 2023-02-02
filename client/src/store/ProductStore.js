@@ -8,11 +8,11 @@ export default class ProductStore {
             {id:3, name_category: 'Вафли', unit_product: 'упаковка'}
         ]
         this._products = [
-            {id: 1, name_product: 'конфеты', weight: '300 грамм', price: '15 BYN', img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
-            {id: 2, name_product: 'каприз', weight: '400 грамм', price: '21 BYN', img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
-            {id: 3, name_product: 'топ', weight: '213 грамм', price: '34 BYN', img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
-            {id: 4, name_product: 'топ', weight: '213 грамм', price: '34 BYN', img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
-            {id: 5, name_product: 'топ', weight: '213 грамм', price: '34 BYN', img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`}
+            {id: 1, name_product: 'конфеты', weight: 300, price: 15, img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
+            {id: 2, name_product: 'каприз', weight: 400, price: 21 , img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
+            {id: 3, name_product: 'топ', weight: 213, price: 34, img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
+            {id: 4, name_product: 'топ', weight: 213, price: 34, img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`},
+            {id: 5, name_product: 'топ', weight: 213, price: 34, img: `http://sarmat-product.ru/wp-content/uploads/2015/01/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82-%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA-3751.jpg`}
         ]
         this._selectedCategory = {}
         makeAutoObservable(this)
