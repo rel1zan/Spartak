@@ -8,7 +8,7 @@ const ProductItem = ({product}) => {
     return (
         <Col md={3} className="mt-3" onClick={() => history.push(PRODUCT_ROUTE + '/' + product.id)}>
             <Card style={{width: 200, height: 210, cursor:"pointer"}} border={"light"}>
-                <Image width={200} height={150} src={product.img}/>
+                <Image width={200} height={150} src={process.env.REACT_APP_API_URL + product.img}/>
                 <div className="pt-2">
                     <div className="mx-1 d-flex justify-content-between align-items-center">
                         <div style={{fontSize: 18}}>{product.name_product}</div>
