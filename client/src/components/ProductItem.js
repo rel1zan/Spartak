@@ -12,9 +12,9 @@ const ProductItem = ({product}) => {
                 <div className="pt-2">
                     <div className="mx-1 d-flex justify-content-between align-items-center">
                         <div style={{fontSize: 18}}>{product.name_product}</div>
-                        <div className="text-danger ">{product.price}</div>
+                        <div className="text-danger ">{product.price} BYN</div>
                     </div>
-                    <div className="mx-1 text-black-50" style={{fontSize: 13}}>{product.weight }</div>
+                    <div className="mx-1 text-black-50" style={{fontSize: 13}}>{product.weight } грамм</div>
                 </div>
             </Card>
         </Col>
