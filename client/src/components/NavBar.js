@@ -6,6 +6,7 @@ import { ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from "../utils/consts";
 import {observer} from "mobx-react-lite";
 import {useHistory} from "react-router-dom/cjs/react-router-dom";
 
+
 const NavBar = observer(() => {
     const {user} = useContext(Context)
     const history = useHistory()
@@ -21,7 +22,7 @@ const NavBar = observer(() => {
                 <NavLink style={{color:"white",fontWeight:"bold", textDecoration: "none"}} to={SHOP_ROUTE}>SPARTAK</NavLink>
                 {user.isAuth ?
                     <Nav>
-                        <Button onClick={() => history.push(ADMIN_ROUTE)} className="mx-1" variant={"outline-light"} >Admin</Button>
+                        <Button onClick={() => history.push(ADMIN_ROUTE)} className="mx-1" variant={"outline-light"}>Admin</Button>
                         <Button variant={"outline-light"} className="ml-4" onClick={() => logOut()}>Log off</Button>
                     </Nav>
                     :
